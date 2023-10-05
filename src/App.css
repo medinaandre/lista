@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Caveat&family=Montserrat:wght@200&display=swap");
 
 /* Reset CSS */
 
@@ -129,58 +129,96 @@ table {
 
 /* CSS code */
 
-
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #ffffff, #374aa6);
+  justify-content: space-between;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #2343e1);
 }
-
 
 html {
   background-color: #ffff;
 }
 
 footer {
-  background-color: #374aa6;
-  color: #fff; 
-  text-align: center; 
-  padding: 10px 0; 
-  font-family: "Cabin";
+  background-color: #2343e1;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Cabin", sans-serif;
   margin-top: auto;
 }
 
+.container {
+  border: 16px solid #374aa6;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
 .title {
-  font-size: 5vw;
-  font-family: "Cabin";
-  font-weight: 700;
-  line-height: 1.075em;
-  color: #000000;
+  font-size: 6.5vw;
+  font-family: "Caveat", cursive;
+  font-weight: 800;
+  color: white;
   text-align: center;
-  margin-top: 30px;
+  background-color: #374aa6;
+  padding-bottom: 20px;
+}
+
+.icone {
+  width: 90px;
+  display: block;
+  margin: 0 auto;
+  background-color: #374aa6;
+}
+
+.container__title {
+  background-color: #374aa6;
 }
 
 .input,
 .input__on {
-  font-family: "Cabin";
+  font-family: "Cabin", sans-serif;
   line-height: 1.075em;
   color: #000000;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 2vw;
 }
 
 .input__on {
-  font-size: 3vw;
+  font-size: 2.3vw;
+  text-align: left;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input__on li:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.input__on li:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tarefa {
-  font-size: 2vw;
-  font-family: "Cabin";
-  line-height: 1.075em;
+  font-size: 2.3vw;
+  font-family: "Cabin", sans-serif;
+  border-radius: 10px;
+  padding: 4px;
 }
 
 .botao {
@@ -188,17 +226,22 @@ footer {
   color: #f1f3ff;
   border-radius: 40px;
   font-size: 2.3vw;
-  margin-left: 10px;
-  font-family: "Cabin";
-  line-height: 1.075em;
+  margin-left: 20px;
+  font-family: "Cabin", sans-serif;
+  width: 15%;
 }
 
 .botao:active {
   background-color: #0cb81a;
 }
 
-.botao__concluir,
-.botao__remover {
-  font-size: 1.8vw;
+.remover {
+  font-size: 1.2vw;
   border-radius: 40px;
+  margin-left: 15px;
+}
+
+.checkbox {
+  transform: scale(1.5);
+  margin-right: 15px;
 }
