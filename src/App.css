@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS code */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #ffffff, #374aa6);
+}
+
+
+html {
+  background-color: #ffff;
+}
+
+footer {
+  background-color: #374aa6;
+  color: #fff; 
+  text-align: center; 
+  padding: 10px 0; 
+  font-family: "Cabin";
+  margin-top: auto;
+}
+
+.title {
+  font-size: 5vw;
+  font-family: "Cabin";
+  font-weight: 700;
+  line-height: 1.075em;
+  color: #000000;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.input,
+.input__on {
+  font-family: "Cabin";
+  line-height: 1.075em;
+  color: #000000;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2vw;
+}
+
+.input__on {
+  font-size: 3vw;
+}
+
+.tarefa {
+  font-size: 2vw;
+  font-family: "Cabin";
+  line-height: 1.075em;
+}
+
+.botao {
+  background-color: #374aa6;
+  color: #f1f3ff;
+  border-radius: 40px;
+  font-size: 2.3vw;
+  margin-left: 10px;
+  font-family: "Cabin";
+  line-height: 1.075em;
+}
+
+.botao:active {
+  background-color: #0cb81a;
+}
+
+.botao__concluir,
+.botao__remover {
+  font-size: 1.8vw;
+  border-radius: 40px;
+}
