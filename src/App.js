@@ -24,6 +24,12 @@ function App() {
     setTarefa(tarefaAtualizada);
   };
 
+  const handleTecla = (e) => {
+    if (e.key === "Enter") {
+      handleAdicionarTarefa();
+    }
+  }
+
   return (
     <div class="container">
       <div class="container__title">
@@ -37,6 +43,7 @@ function App() {
           placeholder="Digite uma nova tarefa"
           value={novaTarefa}
           onChange={(e) => setNovaTarefa(e.target.value)}
+          onKeyPress={handleTecla}
         />
         <button class="botao" onClick={handleAdicionarTarefa}>
           Adicionar
